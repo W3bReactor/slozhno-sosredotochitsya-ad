@@ -34,6 +34,8 @@ themeButtons.forEach(button => {
 const savedTheme = localStorage.getItem('selected-theme') || 'auto';
 setTheme(savedTheme);
 
+console.log(window.matchMedia('(prefers-color-scheme: dark)'))
+
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     if (localStorage.getItem('selected-theme') === 'auto') {
         setTheme('auto');
