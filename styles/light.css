@@ -4,13 +4,35 @@
   переключая тему
 */
 
-:root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root[data-theme="light"] {
+
+
+    /* Semantic */
+    --text-accent-primary: var(--pink-400);
+    --text-accent-primary-shadow: var(--pink-500);
+
+    --text-accent-secondary: var(--gray-500);
+    --text-primary: var(--gray-500);
+    --text-secondary: var(--gray-500);
+    --text-secondary-shadow: var(--pink-500);
+
+    --background-primary: var(--pink-100);
+    --background-accent-primary: var(--pink-500);
+
+    --border-primary: var(--gray-500);
+    --border-secondary: var(--gray-500);
+
+    /* Other */
+    --page-background-image: url("../images/cover-image-light.png");
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+:root[data-theme="light"] .page {
+    background: var(--page-background-image) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+:root[data-theme="light"] .header__decoration-text,
+:root[data-theme="light"] .header__decoration-icon {
+    visibility: hidden;
 }

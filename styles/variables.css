@@ -2,3 +2,25 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+    /* Palette Dark*/
+    --purple-500: #DB00FF;
+    --purple-900: #000028;
+    --pink-600: #FF0070;
+    --pink-200: #F1B2CE;
+
+
+    /* Palette Light*/
+    --pink-100: #FFF1F7;
+    --pink-400: #ffc2e6;
+    --pink-500: #FF8DCB;
+    --gray-500: #353430;
+
+    /* Container */
+    --container-max-width: 1004px;
+    --container-padding-inline: 20px;
+
+    /* Transition */
+    --transition-duration: 0.2s;
+}
