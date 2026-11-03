@@ -51,20 +51,6 @@
     animation: pulse 2.5s infinite ease-out;
 }
 
-@keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 /* Intro */
 .page {
     background: var(--page-background-image) no-repeat center;
